@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vaccine Reference Library</title>
+<style>
+  /* Layout: a single reading column; one list of documents, each a card with a download link. */
+  :root {
+    --bg: #F7F8FA; --surface: #FFFFFF; --fg: #1B2430; --muted: #5B6673;
+    --accent: #1F5FA8; --accent-ink: #FFFFFF; --rule: #D5DBE3;
+    --font-display: "Source Serif 4", Georgia, "Times New Roman", serif;
+    --font-body: "Source Sans 3", "Helvetica Neue", Arial, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+    --bg: #0F141B; --surface: #171E27; --fg: #E6EBF1; --muted: #9AA6B4;
+    --accent: #7FB2F0; --accent-ink: #0F141B; --rule: #2A3441; color-scheme: dark; } }
+  :root[data-theme="dark"] {
+    --bg: #0F141B; --surface: #171E27; --fg: #E6EBF1; --muted: #9AA6B4;
+    --accent: #7FB2F0; --accent-ink: #0F141B; --rule: #2A3441; color-scheme: dark; }
+  body { background: var(--bg); color: var(--fg); font-family: var(--font-body); font-size: 16px; line-height: 1.5;
+    padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-block: 32px 48px; }
+  main { max-width: 42rem; margin: 0 auto; display: grid; gap: 20px; }
+  h1 { font-family: var(--font-display); font-weight: 600; font-size: 1.9rem; line-height: 1.2; margin: 0; text-wrap: balance; }
+  .lede { color: var(--muted); margin: 0; }
+  .doc { background: var(--surface); border: 1px solid var(--rule); border-radius: 8px; padding: 18px 20px; display: grid; gap: 8px; min-width: 0; }
+  .doc h2 { font-family: var(--font-display); font-size: 1.2rem; font-weight: 600; margin: 0; line-height: 1.3; }
+  .doc p { margin: 0; color: var(--muted); font-size: 0.95rem; }
+  .meta { font-size: 0.8rem; letter-spacing: 0.04em; text-transform: uppercase; color: var(--muted); font-variant-numeric: tabular-nums; }
+  .open { justify-self: start; background: var(--accent); color: var(--accent-ink); text-decoration: none; font-weight: 600; padding: 8px 14px; border-radius: 6px; }
+  .open:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+  footer { color: var(--muted); font-size: 0.85rem; }
+</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@600&family=Source+Sans+3:wght@400;600&display=swap">
+</head>
+<body>
+<main>
+  <h1>Vaccine Reference Library</h1>
+  <p class="lede">Pharmacist evidence briefs for the Alberta 2026–27 respiratory season. Each link opens the PDF directly; use your browser's download button to save it.</p>
+
+  <section class="doc">
+    <div class="meta">Updated 9 Nov 2026 · 7 pages · 66 linked sources</div>
+    <h2>Nuvaxovid (XFG) pharmacist rundown</h2>
+    <p>Mechanism, trial and real-world evidence, safety, Alberta schedule and eligibility, counselling script, and a side-by-side with the Pfizer and Moderna evidence.</p>
+    <a class="open" href="Nuvaxovid_Pharmacist_Rundown_2026-27.pdf" target="_blank" rel="noopener">Open PDF</a>
+  </section>
+
+  <section class="doc">
+    <div class="meta">Updated 2 Nov 2026 · 10 pages · 87 linked sources</div>
+    <h2>Adult vaccines in Alberta: evidence brief</h2>
+    <p>Pneumococcal, RSV, influenza, Shingrix and COVID-19: baseline risk versus risk after vaccination, how each vaccine is built, hospitalization reduction, duration of protection, counselling points.</p>
+    <a class="open" href="Adult_Vaccines_Alberta_Evidence_Brief_2026-27.pdf" target="_blank" rel="noopener">Open PDF</a>
+  </section>
+
+  <section class="doc">
+    <div class="meta">Updated 2 Nov 2026 · 18 pages · 69 references</div>
+    <h2>Vaccine pharmacology and patient-education reference</h2>
+    <p>Ipsilateral-arm injection after node dissection, 2026–27 influenza strains and selection, high-dose versus adjuvanted vaccine, RSV boosters, plus counselling sheets on duration of protection and this year's strains.</p>
+    <a class="open" href="Vaccine_Reference_Alberta_2026-27.pdf" target="_blank" rel="noopener">Open PDF</a>
+  </section>
+
+  <footer>Educational references for pharmacist practice. Confirm eligibility and product supply against the current Alberta Immunization Policy before administering.</footer>
+</main>
+</body>
+</html>
